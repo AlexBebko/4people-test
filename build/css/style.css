@@ -567,3 +567,7 @@ button,
     padding: 0 16px;
   }
 }
+
+.header {
+  background-color: rgba(16, 16, 29, 0.9);
+}
