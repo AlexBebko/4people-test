@@ -1,0 +1,60 @@
+.footer {
+  background-color: $color-blue-zodiac;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+
+    color: $color-default-white;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  &__copyright-text {
+    margin: 0;
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  &__payment-list {
+    display: flex;
+    column-gap: 38px;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    color: $color-silver-c3;
+  }
+
+  &__payment-item {
+    display: flex;
+    column-gap: 10px;
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  &__contacts-list {
+    display: flex;
+    column-gap: 38px;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+  }
+
+  &__contacts-link {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

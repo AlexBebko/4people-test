@@ -1,3 +1,6 @@
+import {showFileName} from './modules/show-file-name.js';
+import {showRangeValue} from './modules/Show-range-value.js';
+import {addCustomSelect} from './modules/add-custom-select.js';
 
 // ---------------------------------
 
@@ -5,7 +8,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-
+  showRangeValue();
+  showFileName();
+  addCustomSelect();
 
   // Modules
   // ---------------------------------
@@ -17,5 +22,3 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // ---------------------------------
-
-

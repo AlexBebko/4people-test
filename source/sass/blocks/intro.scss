@@ -1,0 +1,52 @@
+.intro {
+  background: url("../img/intro.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 850px;
+
+  &__container {
+    padding-top: 203px;
+  }
+
+  &__title {
+    max-width: 780px;
+    margin: 0;
+    margin-bottom: 80px;
+
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+
+    span {
+      color: $color-summer-sky-circle;
+    }
+  }
+
+  &__description {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__list {
+    margin: 0;
+    margin-bottom: 80px;
+    list-style-type: "-  ";
+    padding-left: 25px  ;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    column-gap: 30px;
+  }
+}
