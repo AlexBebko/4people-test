@@ -5,6 +5,6 @@ export function showRangeValue() {
   rangeValue.textContent = `${rangeInput.value} %`;
 
   rangeInput.addEventListener('input', function () {
-    rangeValue.textContent = `${rangeInput.value}%`;
+    rangeValue.textContent = `${rangeInput.value} %`;
   });
 }

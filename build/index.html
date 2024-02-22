@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Тестовый проект для 4people">
     <title>LOREMIPSUM.NET</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Lato-Semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -115,9 +116,9 @@
                 <p class="order__item-text">Excepteur sint occaecat cupidatat non proident</p>
               </li>
             </ul>
-            <form class="order__form form" action="#" method="post">
+            <form class="order__form form" action="https://eoi8tbn0ogneq28.m.pipedream.net" method="post">
               <div class="form__input-wrapper">
-                <select class="form__input form__select">
+                <select class="form__input form__select" name="select">
                   <option class="form__select-option" value="hidden" disabled hidden>
                     Выберите тип системы
                   </option>
@@ -209,5 +210,6 @@
     </div>
 
     <script src="js/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
   </body>
 </html>

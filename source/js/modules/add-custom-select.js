@@ -15,6 +15,7 @@ export function addCustomSelect() {
 
     const selectOptions = document.createElement('ul');
     selectOptions.classList.add('select-options');
+    selectOptions.setAttribute('data-simplebar', '');
     selectWrapper.appendChild(selectOptions);
 
     // Добавляем опции в список

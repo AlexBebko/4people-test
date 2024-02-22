@@ -17,8 +17,20 @@
     border: $color-default-white 1px solid;
     border-radius: 3px;
 
+    transition: all 0.3s;
+
     &::placeholder {
       color: $color-jaguar;
+    }
+
+    &:hover {
+      background-color: $color-blue-zodiac-85;
+      color: $color-default-white;
+      border-color: $color-transparent;
+
+      &::placeholder {
+        color: $color-default-white;
+      }
     }
   }
 
