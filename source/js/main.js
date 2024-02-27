@@ -1,6 +1,7 @@
 import {showFileName} from './modules/show-file-name.js';
 import {showRangeValue} from './modules/Show-range-value.js';
 import {addCustomSelect} from './modules/add-custom-select.js';
+import {toggleBurgerMenu} from './modules/burger-menu.js';
 
 // ---------------------------------
 
@@ -11,6 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
   showRangeValue();
   showFileName();
   addCustomSelect();
+  toggleBurgerMenu();
+
 
   // Modules
   // ---------------------------------

@@ -1,6 +1,16 @@
 .form {
+  position: relative;
   display: flex;
   flex-direction: column;
+  row-gap: 16px;
+
+  @include vp-1023 {
+    align-items: center;
+  }
+
+  @include vp-767 {
+    align-items: stretch;
+  }
 
   &__input-wrapper {
     display: grid;
@@ -8,6 +18,16 @@
     grid-template-rows: 48px 48px;
     gap: 30px 20px;
     margin-bottom: 40px;
+
+    @include vp-1023 {
+      grid-template-columns: 190px 190px 190px;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 48px;
+      margin-bottom: 30px;
+    }
   }
 
   &__input {
@@ -19,14 +39,36 @@
 
     transition: all 0.3s;
 
-    &::placeholder {
-      color: $color-jaguar;
+    @include vp-1023 {
+      font-size: 15px;
     }
 
-    &:hover {
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &::placeholder {
+      color: $color-jaguar;
+      font-size: 18px;
+      line-height: 22px;
+
+      @include vp-1023 {
+        font-size: 15px;
+      }
+
+      @include vp-767 {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    &:hover,
+    &:focus {
       background-color: $color-blue-zodiac-85;
       color: $color-default-white;
       border-color: $color-transparent;
+      outline: none;
 
       &::placeholder {
         color: $color-default-white;
@@ -37,14 +79,19 @@
   &__range-wrapper {
     position: relative;
     grid-column: span 2;
+
+    @include vp-767 {
+      grid-column: 1;
+    }
   }
 
-  &__input--custom {
+  &__input-file-wrapper {
     position: relative;
     display: inline-block;
   }
 
   &__input-label {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,61 +103,86 @@
   }
 
   &__input-title {
-    display: inline-block;
+    position: relative;
     margin: 0;
+    padding-right: 40px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 24px;
     color: $color-default-white;
+
+    @include vp-1023 {
+      font-size: 16px;
+    }
+
+    @include vp-374 {
+      font-size: 13px;
+      line-height: 16px;
+    }
   }
 
   &__input-value {
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
-    display: inline-block;
+    transform: translateY(-50%);
+    display: block;
     margin: 0;
     margin-left: auto;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     color: $color-default-white;
-  }
 
-  &__input[type=range] {
-    width: 100%;
+    @include vp-1023 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include vp-374 {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
   input[type=range] {
-      -webkit-appearance: none; /* Убираем стандартные стили для Webkit браузеров */
+      -webkit-appearance: none;
       width: 100%;
       height: 6px;
-      background: $color-white-70; /* Цвет фона полоски */
+      background: $color-white-70;
       border: $color-default-white 1px solid;
-      border-radius: 5px; /* Закругление углов */
+      border-radius: 5px;
   }
 
   input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Убираем стандартные стили для Webkit браузеров */
+    -webkit-appearance: none;
     width: 20px;
     height: 20px;
-    background: #42A9ED; /* Цвет ползунка */
+    background: #42A9ED;
     border: $color-endeavour 3px solid;
-    border-radius: 50%; /* Делаем круглый ползунок */
-    cursor: pointer; /* Делаем курсор указателем */
+    border-radius: 50%;
+    cursor: pointer;
   }
 
   input[type=range]::-moz-range-thumb {
     width: 20px;
     height: 20px;
-    background: #42A9ED; /* Цвет ползунка */
+    background: #42A9ED;
     border: $color-endeavour 3px solid;
-    border-radius: 50%; /* Делаем круглый ползунок */
+    border-radius: 50%;
     cursor: pointer;
   }
 
   &__button {
-    min-width: 376px;
+    width: calc(33.3% - 20px);
     align-self: center;
+
+    @include vp-1023 {
+      width: 190px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
   }
 }

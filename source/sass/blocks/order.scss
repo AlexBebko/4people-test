@@ -1,9 +1,15 @@
 .order {
   background: url("../img/map.png");
-  padding-bottom: 150px;
+  background-color: $color-jaguar;
 
   &__container {
     padding-top: 121px;
+    padding-bottom: 150px;
+
+    @include vp-767 {
+      padding-top: 80px;
+      padding-bottom: 60px;
+    }
   }
 
   &__title {
@@ -16,8 +22,14 @@
     line-height: 40px;
     color: $color-default-white;
 
-    &--sky {
+    span {
       color: $color-summer-sky-circle;
+    }
+
+    @include vp-767 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 28px;
     }
   }
 
@@ -28,6 +40,12 @@
     font-size: 18px;
     line-height: 22px;
     color: $color-silver-b;
+
+    @include vp-767 {
+      margin-bottom: 40px;
+      font-size: 15px;
+      line-height: 18px;
+    }
   }
 
   &__list {
@@ -40,6 +58,17 @@
     padding: 0;
     margin: 0 0 80px;
     list-style-type: none;
+
+    @include vp-1439 {
+      column-gap: 0;
+    }
+
+    @include vp-767 {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 15px;
+      margin: 0 0 40px;
+    }
   }
 
   &__item {
@@ -56,6 +85,15 @@
     font-size: 16px;
     line-height: 19px;
     color: $color-default-white;
+
+    @include vp-1439 {
+      width: 165px;
+    }
+
+    @include vp-767 {
+      font-size: 15px;
+      line-height: 18px;
+    }
 
     &:last-child {
       .order__icon-wrapper::before {
@@ -91,6 +129,16 @@
         52px 0 $color-silver-c4,
         78px 0 $color-silver-c4,
         104px 0 $color-silver-c4;
+
+        @include vp-1439 {
+          box-shadow:
+            0 0 0 0 $color-silver-c4,
+            26px 0 $color-silver-c4;
+        }
+
+        @include vp-1023 {
+          content: none;
+        }
     }
 
   }
