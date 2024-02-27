@@ -32,6 +32,13 @@
     @include vp-767 {
       grid-template-columns: 1fr 1fr;
       gap: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    @include vp-374 {
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
   }
 

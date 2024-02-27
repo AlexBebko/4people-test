@@ -23,6 +23,11 @@
 
       justify-content: flex-start;
     }
+
+    @include vp-374 {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
   }
 
   &__toggle {

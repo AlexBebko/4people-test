@@ -1436,6 +1436,24 @@ button,
     column-gap: 40px;
   }
 
+  .intro__container {
+    padding-top: 203px;
+  }
+
+  .intro__container {
+    padding-top: 203px;
+  }
+
+  .order__container {
+    padding-top: 121px;
+    padding-bottom: 150px;
+  }
+
+  .order__container {
+    padding-top: 121px;
+    padding-bottom: 150px;
+  }
+
   .order__list {
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
@@ -1496,9 +1514,18 @@ button,
     line-height: 15px;
   }
 
+  .intro__container {
+    padding-top: 203px;
+  }
+
   .btn--file-upload {
     font-size: 13px;
     line-height: 16px;
+  }
+
+  .order__container {
+    padding-top: 121px;
+    padding-bottom: 150px;
   }
 
   .order__icon-wrapper::before {
@@ -1675,6 +1702,7 @@ button,
   .intro__title {
     margin-bottom: 40px;
     font-size: 28px;
+    line-height: 100%;
   }
 
   .intro__description {
@@ -1799,6 +1827,8 @@ button,
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .footer__copyright {
@@ -1829,8 +1859,23 @@ button,
     padding: 0 16px;
   }
 
+  .header__container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   .header__toggle {
     right: 15px;
+  }
+
+  .intro__container {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+
+  .order__container {
+    padding-top: 80px;
+    padding-bottom: 60px;
   }
 
   .form__input-title {
@@ -1841,5 +1886,10 @@ button,
   .form__input-value {
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .footer__container {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
