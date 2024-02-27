@@ -6,6 +6,11 @@
     padding-top: 121px;
     padding-bottom: 150px;
 
+    @include vp-1919 {
+      padding-top: 121px;
+      padding-bottom: 150px;
+    }
+
     @include vp-1439 {
       padding-top: 121px;
       padding-bottom: 150px;

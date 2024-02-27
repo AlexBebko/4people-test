@@ -1423,6 +1423,15 @@ button,
     margin: 0 auto;
     padding: 0 135px;
   }
+
+  .intro__container {
+    padding-top: 203px;
+  }
+
+  .order__container {
+    padding-top: 121px;
+    padding-bottom: 150px;
+  }
 }
 
 @media (max-width: 1439px) {

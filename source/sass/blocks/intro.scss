@@ -13,6 +13,10 @@
   &__container {
     padding-top: 203px;
 
+    @include vp-1919 {
+      padding-top: 203px;
+    }
+
     @include vp-1439 {
       padding-top: 203px;
     }
